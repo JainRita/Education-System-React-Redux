@@ -8,8 +8,6 @@ import grievance from "../images/grievance.svg";
 import student from "../images/student.svg";
 import respond from "../images/respond.svg";
 import { NavBarAdmin } from "./NavBarHome";
-import studymaterial from "../images/studymaterial.svg";
-import paymentview from "../images/paymentview.svg";
 import { Link } from "react-router-dom";
 
 class AdminDashboard extends Component {
@@ -17,9 +15,6 @@ class AdminDashboard extends Component {
     if (!localStorage.getItem("loggedAdmin")) {
       this.props.history.replace("/admin-login");
     }
-  }
-  componentDidMount() {
-    document.title = "Admin Home";
   }
 
   render() {
@@ -149,29 +144,6 @@ class AdminDashboard extends Component {
                 }}
               >
                 <div className="overlay">
-                  <img src={studymaterial} alt="Card image cap" id="test-img" />
-                </div>
-
-                <div className="card-body">
-                  <Link to="/add-material">
-                    <button type="button" id="btn-admin-home">
-                      Click here to manage study material
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-xs-12 col-sm-6 col-md-6">
-              <div
-                className="card mb-4"
-                style={{
-                  border: "2px solid #683AA4",
-                  borderRadius: "5px",
-                  boxShadow: "5px 10px #a181dd",
-                }}
-              >
-                <div className="overlay">
                   <img src={student} alt="Card image cap" id="test-img" />
                 </div>
 
@@ -179,29 +151,6 @@ class AdminDashboard extends Component {
                   <Link to="/manage-student">
                     <button type="button" id="btn-admin-home">
                       Click here to manage Student
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-xs-12 col-sm-6 col-md-6">
-              <div
-                className="card mb-4"
-                style={{
-                  border: "2px solid #683AA4",
-                  borderRadius: "5px",
-                  boxShadow: "5px 10px #a181dd",
-                }}
-              >
-                <div className="overlay">
-                  <img src={paymentview} alt="Card image cap" id="test-img" />
-                </div>
-
-                <div className="card-body">
-                  <Link to="/view-payment">
-                    <button type="button" id="btn-admin-home">
-                      Click here to view payment
                     </button>
                   </Link>
                 </div>

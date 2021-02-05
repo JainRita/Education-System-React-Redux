@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import logo from "../images/bg1.png";
 import avtar from "../images/avatar.svg";
 import { Link } from "react-router-dom";
-//import "../css/style.css";
+import "../css/style.css";
 
 class Quiz extends Component {
   constructor(props) {
@@ -21,38 +21,39 @@ class Quiz extends Component {
   render() {
     return (
       <div>
-        <img src={logo} className="wave" alt="logo" />
+        <img src={logo} id="wave-qhome" alt="logo" />
         <div className="container-fluid">
           <div className="row">
             <div className="col">
-              <div className="test-container">
-                <img src={avtar} className="avatar" alt="avtar" />
+              <div id="container-test">
+                <img src={avtar} id="avatar-test" alt="avtar" />
               </div>
-              <div className="div-welcome">Begin the Quiz</div>
+              <div id="div-welcome-test"><strong> Welcome!! Ready for Test </strong> </div>
               <br />
-              <div className="div-instruct">
-                <h3 className="h3"> Instructions Before Proceeding </h3> <hr />
+              <div id="div-instruct-test"> <strong>
+                <h3 id="h3-test">Instructions Before Proceeding </h3> <hr id="hr-test"/>
                 <ol>
-                  <li className="li">
-                    Please read all the questions carefully.
-                  </li>
-                  <li className="li">No use of calculators are allowed.</li>
-                  <li className="li">
+                  <li id="li-test">No use of calculators are allowed.</li>
+                  <li id="li-test">
                     Do not minimize the screen or switch to other tabs.
                   </li>
-                  <li className="li">
+                  <li id="li-test">
                     Total Duration of examination is 30 minutes.
                   </li>
-                  <li className="li">
-                    Number of Questions : 10 with <u>1 mark each.</u>
+                  <li id="li-test">
+                    Student can check answer after each questions.
+                  </li>
+                  <li id="li-test">
+                    Number of Questions : 10 
                   </li>
                 </ol>
+                </strong>
               </div>
               <br />
-              <div className="div-btn">
+              <div id="div-btn-test">
                 <Link to="/attempt-quiz">
-                  <button className="float-left btn btn-primary btn-block rounded-pill submit-button">
-                    Begin Test
+                  <button id="btn-test">
+                    <strong> Begin Test </strong>
                   </button>
                 </Link>
               </div>

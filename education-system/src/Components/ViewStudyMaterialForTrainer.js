@@ -28,10 +28,13 @@ class ViewStudyMaterialForTrainer extends Component {
     );
   }
   render() {
+    
+
     return (
       <div className="contentbg">
         <div class="container" style={{ padding: "30px" }}>
           <div class="row">
+           
             {this.props.materialList ? (
               this.props.materialList.map((content, index) => (
                 <div class="col">
@@ -54,10 +57,11 @@ class ViewStudyMaterialForTrainer extends Component {
                     </div>
                   </div>
                 </div>
+
               ))
             ) : (
-              <h1>Loading..</h1>
-            )}
+                <h1>Loading..</h1>
+              )}
           </div>
         </div>
       </div>

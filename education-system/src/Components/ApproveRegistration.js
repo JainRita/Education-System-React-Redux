@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "../css/approveRegistration.css";
 import { connect } from "react-redux";
 import * as actionCreators from "../actions/action";
-import { NavBarAdmin } from "./NavBarHome";
 
 class ApproveRegistration extends Component {
   constructor(props) {
@@ -20,9 +19,8 @@ class ApproveRegistration extends Component {
   }
 
   componentDidMount() {
-    
+    //this.props.clearState();
     this.props.onGetRegistrationRequest();
-    document.title = "Approve Request";
   }
 
   approveRequest = (studentId) => {
@@ -32,18 +30,58 @@ class ApproveRegistration extends Component {
   render() {
     return (
       <div>
-        <NavBarAdmin />
         <h1
-          style={{
-            textAlign: "center",
-            color: "#683AA4",
-            fontWeight: "bold",
-            marginTop: "66px",
-          }}
+          style={{ textAlign: "center", color: "#683AA4", fontWeight: "bold" }}
         >
           Student Registration Request List
         </h1>
         <div className="container" style={{ overflowX: "auto" }}>
+          {/* <div className="table-responsive">
+
+            <table className="table">
+              <thead style={{ textAlign: "center" }}>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First Name</th>
+                  <th scope="col">Middle Name</th>
+                  <th scope="col">Last Name</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Username</th>
+                  <th scope="col">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="table-info">
+                  <th scope="row">1</th>
+                  <td>Aniket</td>
+                  <td>Keshav</td>
+                  <td>Karmakar</td>
+                  <td>Aniket@gmail.com</td>
+                  <td>aniket98</td>
+                  <td>
+                    <button className="btn btn-outline-success">Approve</button>
+                  </td>
+                </tr>
+               
+                {this.props.studentList.map((student, index) => {
+                  <tr className="table-info" key={index}>
+                    <th scope="row">{student.studentId}</th>
+                    <td>{student.firstName}</td>
+                    <td>{student.middleName}</td>
+                    <td>{student.lastName}</td>
+                    <td>{student.emailId}</td>
+                    <td>{student.username}</td>
+                    <td>
+                      <button className="btn btn-outline-success">
+                        Approve
+                      </button>
+                    </td>
+                  </tr>;
+                })}
+              </tbody>
+            </table>
+          </div> */}
+
           <table className="table table-striped">
             <thead>
               <tr className="table-info">
@@ -70,7 +108,6 @@ class ApproveRegistration extends Component {
                     <td>
                       <button
                         className="btn"
-                        style={{ marginLeft: "50px" }}
                         onClick={() => {
                           this.approveRequest(student.studentId);
                         }}
@@ -81,7 +118,7 @@ class ApproveRegistration extends Component {
                   </tr>
                 ))
               ) : (
-                <h1 style={{textAlign:"center"}}>Loading..</h1>
+                <h1>Loading..</h1>
               )}
             </tbody>
           </table>
@@ -92,7 +129,7 @@ class ApproveRegistration extends Component {
 }
 
 const mapStateToProps = (state) => {
-  
+  //console.log(state, "from approve");
   return {
     studentList: state.studentList,
   };

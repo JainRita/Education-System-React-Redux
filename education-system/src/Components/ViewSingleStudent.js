@@ -20,13 +20,13 @@ class ViewSingleStudent extends Component {
   submitData = (e) => {
     e.preventDefault();
     const id = this.studentId.current.value;
+    console.log(id);
     this.props.onGetSingleStudentDetails(id);
     this.studentId.current.value = "";
   };
 
   componentDidMount() {
     this.props.clearState();
-    document.title = "Sinlge Student Profile";
   }
   componentWillMount() {
     if (!localStorage.getItem("loggedAdmin")) {
@@ -101,6 +101,8 @@ class ViewSingleStudent extends Component {
 }
 
 const mapStateToProps = (state) => {
+  console.log(state);
+  // console.log(state.studentObj + "hello how do you do");
   return {
     student: state.studentObj,
   };

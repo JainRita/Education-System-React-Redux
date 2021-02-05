@@ -7,6 +7,7 @@ import logo from "../images/logoonly.png";
 
 class StudentViewTrainers extends Component {
   componentDidMount() {
+
     let courseId = this.props.match.params.courseId;
     console.log(courseId);
     this.props.onGetTrainersForStudents(courseId);
@@ -15,6 +16,7 @@ class StudentViewTrainers extends Component {
   render() {
     let courseId = this.props.match.params.courseId;
 
+  
     return (
       <div className="trainerbg">
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -53,31 +55,29 @@ class StudentViewTrainers extends Component {
         </nav>
         <div class="container" style={{ padding: "30px" }}>
           <div class="row">
+            
             {this.props.trainerList ? (
               this.props.trainerList.map((trainer, index) => (
                 <div class="col" style={{ textAlign: "center" }}>
-                  <div
-                    class="card border-info mb-3"
-                    style={{ maxWidth: "18rem" }}
-                  >
-                    <div class="card-header">Trainer</div>
-                    <div class="card-body text-info">
-                      <h5 class="card-title">
-                        {trainer.firstName} {trainer.middleName}{" "}
-                        {trainer.lastName}
-                      </h5>
-                      <NavLink
-                        to={`/view-study-material-for-trainer/${trainer.trainerId}/`}
-                      >
-                        <h6>Select</h6>
-                      </NavLink>
-                    </div>
+                <div class="card border-info mb-3" style={{ maxWidth: "18rem" }}>
+                  <div class="card-header">Trainer</div>
+                  <div class="card-body text-info">
+                    <h5 class="card-title">
+                      {trainer.firstName} {trainer.middleName} {trainer.lastName}
+                    </h5>
+                    <NavLink
+                      to={`/view-study-material-for-trainer/${trainer.trainerId}/`}
+                    >
+                      <h6>Select</h6>
+                    </NavLink>
                   </div>
                 </div>
+              </div>
+                
               ))
             ) : (
-              <h1>Loading..</h1>
-            )}
+                <h1>Loading..</h1>
+              )}
           </div>
         </div>
       </div>

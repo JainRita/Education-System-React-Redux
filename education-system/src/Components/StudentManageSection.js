@@ -1,7 +1,7 @@
 import React, { Component } from "react";
+import logo from "../images/logo.png";
 import { NavBarAdmin } from "../Components/NavBarHome";
 import "../css/studentmanage.css";
-import studentimg from "../images/hire-reactnative01.png";
 import { Link } from "react-router-dom";
 
 class StudentManageSection extends Component {
@@ -10,9 +10,6 @@ class StudentManageSection extends Component {
       this.props.history.replace("/admin-login");
     }
   }
-  componentDidMount() {
-    document.title = "Manage Student";
-  }
   render() {
     return (
       <div>
@@ -20,7 +17,7 @@ class StudentManageSection extends Component {
         <div className="container">
           <div class="card-deck">
             <div class="card">
-              <img class="card-img-top" src={studentimg} alt="Card image cap" />
+              <img class="card-img-top" src={logo} alt="Card image cap" />
               <div class="card-body">
                 <h3
                   class="card-title"
@@ -41,7 +38,7 @@ class StudentManageSection extends Component {
               </div>
             </div>
             <div class="card">
-              <img class="card-img-top" src={studentimg} alt="Card image cap" />
+              <img class="card-img-top" src={logo} alt="Card image cap" />
               <div class="card-body">
                 <h3
                   class="card-title"
@@ -60,7 +57,7 @@ class StudentManageSection extends Component {
               </div>
             </div>
             <div class="card">
-              <img class="card-img-top" src={studentimg} alt="Card image cap" />
+              <img class="card-img-top" src={logo} alt="Card image cap" />
               <div class="card-body">
                 <h3
                   class="card-title"
@@ -78,6 +75,23 @@ class StudentManageSection extends Component {
                   <button id="btn-manage">Click Here</button>
                 </Link>
               </div>
+            </div>
+          </div>
+
+          <div class="card text-center">
+            <div class="card-body">
+              <h3
+                class="card-title"
+                style={{ textAlign: "center", fontWeight: "bolder" }}
+              >
+                Courses Enrolled
+              </h3>
+              <p class="card-text">
+                See all the list of courses enrolled by student
+              </p>
+              <Link to="/view-enrolled-courses">
+                <button id="btn-manage">View Enrolled Courses</button>
+              </Link>
             </div>
           </div>
         </div>

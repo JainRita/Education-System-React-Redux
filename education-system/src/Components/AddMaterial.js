@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { withRouter, Link } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import * as actionCreators from "../actions/action";
 import "../css/study.css";
 import studybg from "../images/studybg.png";
 import matlogo from "../images/matlogo.jpg";
-import logo from "../images/logoonly-removebg-preview.png";
 
 class AddMaterial extends Component {
   constructor(props) {
@@ -16,11 +15,11 @@ class AddMaterial extends Component {
   componentDidMount() {
     this.props.clearState();
   }
-  // componentWillMount() {
-  //   if (!localStorage.getItem("loggedAdmin")) {
-  //     this.props.history.replace("/admin-login");
-  //   }
-  // }
+  componentWillMount() {
+    if (!localStorage.getItem("loggedAdmin")) {
+      this.props.history.replace("/admin-login");
+    }
+  }
   componentDidUpdate() {
     let check = this.props.returnedMessage.split(" ");
     if (check[0] === "Successfully") {
@@ -44,28 +43,6 @@ class AddMaterial extends Component {
   render() {
     return (
       <div>
-        <div>
-          <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <div className="container-fluid">
-              <div className="collapse navbar-collapse" id="navbarNav">
-                <ul className="navbar-nav">
-                  <li className="nav-item">
-                    <Link id="logo" className="nav-link" to="">
-                      <div style={{ marginBottom: "5px" }}>
-                        <img id="logoimg" src={logo} alt="Logo" /> EDUCRATE
-                      </div>
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="nav-link" to="/view-material">
-                      View Materials
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </div>
         <div className="container-fluid">
           <div className="row">
             <div className="col">
@@ -91,9 +68,9 @@ class AddMaterial extends Component {
                         required
                         onInvalid={this.setValidityMaterial.bind(this)}
                       />
-                      {/* <div className="invalid-tooltip">
+                      <div className="invalid-tooltip">
                         Please enter alphabets!!
-                      </div> */}
+                      </div>
                     </div>
                   </div>
                   <div className="col">

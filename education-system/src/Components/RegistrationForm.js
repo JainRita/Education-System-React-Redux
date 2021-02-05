@@ -27,7 +27,6 @@ class RegistrationForm extends Component {
 
   componentDidMount() {
     this.props.clearState();
-    document.title = "Student Registration";
   }
 
   submitData = (e) => {
@@ -56,6 +55,11 @@ class RegistrationForm extends Component {
     this.password.current.value = "";
     this.confirmPassword.current.value = "";
   };
+
+  // componentDidUpdate() {
+  //   this.props.clearState();
+  // }
+
   render() {
     let data = "";
 
@@ -80,6 +84,9 @@ class RegistrationForm extends Component {
         }
       }
     }
+
+    // let message = Object.values(this.props.returnedMessage)[1];
+    // const renderMessage = <h6>{message}</h6>;
 
     return (
       <div>

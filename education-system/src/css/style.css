@@ -1,57 +1,77 @@
-.avatar {
-  margin-top: 20px;
-  margin-left: 600px;
-  height: 100px;
-  width: 100px;
+#wave-qhome{
+  position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    z-index: -1;  
 }
-.test-container {
+#container-test{
   margin-top: 100px;
 }
-.div-welcome {
+#avatar-test {
+  margin-top: 20px;
+  margin-left: 1200px;
+  height: 150px;
+  width: 200px;
+  border-radius: 85px;
+  box-shadow: 5px 10px #888888;
+}
+#div-welcome-test {
+  text-shadow: 5px 5px 8px #000000;
   margin-top: 10px;
-  margin-left: 600px;
+  margin-left: 1000px;
   font-weight: 2px;
-  font-size: xx-large;
-  font-weight: bolder;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  color: lightgreen;
+  font-size: 52px;
+  background: -webkit-linear-gradient(rgb(245, 6, 245), rgb(25, 23, 26));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.div-instruct {
-  height: 220px;
+#div-instruct-test {
+  height: 260px;
   border-radius: 16px;
-  width: 500px;
-  background-color: lightcyan;
-  margin-left: 700px;
+  width: 600px;
+  border-style: solid;
+  border-color: rgb(148,0,211,0.5);
+  margin-left: 1000px;
+  box-shadow: 5px 10px #888888;
 }
-.h3 {
-  color: springgreen;
+#hr-test{
+  color:violet;
+  border-style: solid;
+}
+#h3-test {
+  padding-top: 10px;
+  color: violet;
+  text-align: center;
   margin-left: 10px;
   margin-top: 10px;
 }
-.li {
+#li-test{
+  padding-left: 10px;
   text-align: left;
-  font-size: large;
+  font-size: larger;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  color: springgreen;
+  color: violet;
 }
-.btn {
-  margin-left: 20px;
-  width: 300px;
-  background-color: #683aa4 !important;
-  border: none !important;
-  outline: none !important;
-  height: 49px;
-  color: #fff;
+#div-btn-test{
+  height: 100px;
+  width: 350px;
+  border-radius: 27px;
+}
+#btn-test{
+  padding-top: 10px;
+  margin-left: 1200px;
+  border-radius: 16px;
+  padding-bottom: 10px;
   text-transform: uppercase;
-  font-weight: 600;
-  margin: 10px 0;
-  cursor: pointer;
-  transition: 0.5s;
-  background-image: linear-gradient(
-    to right,
-    #683aa4,
-    #844fca,
-    #a66bf3
-  ) !important;
-  cursor: pointer;
+  font-size: 24px;
+  color:deeppink;
+  font-family :'Times New Roman', Times, serif;
+  border-color: rgba(148,0,211,0.5);
+  box-shadow: 5px 10px #888888;
+}
+#btn-test:hover{
+  background-color: rgba(236, 13, 106, 0.781);
+  color: white;
 }

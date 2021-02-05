@@ -62,13 +62,13 @@ const NavBarHome = () => {
 
               <li className="nav-item">
                 <Link to="/student-login" className="nav-link">
-                  <small>Student</small>
+                  <small>Student Login</small>
                 </Link>
               </li>
 
               <li className="nav-item">
                 <Link to="/admin-login" className="nav-link">
-                  <small>Admin</small>
+                  <small>Admin Login</small>
                 </Link>
               </li>
             </ul>
@@ -109,7 +109,7 @@ const NavBarAdmin = () => {
             id="navbarSupportedContent"
             style={{ marginBottom: "20px" }}
           >
-            <ul className="navbar-nav">
+            <ul className="navbar-nav ms-auto">
               <li className="nav-item">
                 <Link className="nav-link" to="/add-course">
                   <small>Course</small>
@@ -137,11 +137,11 @@ const NavBarAdmin = () => {
                   <small>Student</small>
                 </Link>
               </li>
-              {/* <li className="nav-item">
+              <li className="nav-item">
                 <Link to="/add-message" className="nav-link">
                   <small>Message</small>
                 </Link>
-              </li> */}
+              </li>
 
               <li className="nav-item">
                 <Link to="" className="nav-link" onClick={adminLogout}>
@@ -209,8 +209,8 @@ const NavBarStudent = () => {
               </li>
 
               <li className="nav-item">
-                <Link to="/my-profile" className="nav-link">
-                  <small>Profile</small>
+                <Link to="/update-profile" className="nav-link">
+                  <small>My Profile</small>
                 </Link>
               </li>
 
@@ -218,6 +218,8 @@ const NavBarStudent = () => {
                 <Link to="" className="nav-link" onClick={studentLogout}>
                   <small>Logout</small>
                 </Link>
+
+                {/* <i class="fa fa-sign-out" aria-hidden="true"></i> */}
               </li>
             </ul>
           </div>

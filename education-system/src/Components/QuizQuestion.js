@@ -23,9 +23,8 @@ class QuizQuestion extends Component {
           <td>{ques.correctAnswer}</td>
           <td>
             <button
-              className="view"
-              onClick={this.delete.bind(this, ques.questionId)}
-            >
+              className="btn btn-primary btn-block rounded-pill submit-button"
+              onClick={this.delete.bind(this, ques.questionId)}>
               Delete
             </button>
           </td>

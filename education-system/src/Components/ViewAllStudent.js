@@ -14,7 +14,6 @@ class ViewAllStudent extends Component {
 
   componentDidMount() {
     this.props.onGetAllStudents();
-    document.title = "All Student Details";
   }
 
   componentWillMount() {
@@ -26,9 +25,7 @@ class ViewAllStudent extends Component {
     return (
       <div className="container">
         <NavBarAdmin />
-        <h3
-          style={{ textAlign: "center", fontWeight: "bold", marginTop: "70px" }}
-        >
+        <h3 style={{ textAlign: "center", fontWeight: "bold" }}>
           All Registered Student Details
         </h3>
         <hr />
@@ -68,6 +65,7 @@ class ViewAllStudent extends Component {
 }
 
 const mapStateToProps = (state) => {
+  //console.log(state + "fom state");
   return {
     studentList: state.studentDetailsList,
   };

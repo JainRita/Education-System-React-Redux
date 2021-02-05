@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import * as actionCreators from "../actions/action";
 import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
+import logo from "../images/logoonly.png";
 
 class AddQuiz extends Component {
   constructor(props) {
@@ -62,6 +64,33 @@ class AddQuiz extends Component {
 
   render() {
     return (
+      <div>
+        <div>
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+          <div className="container-fluid">
+            <div className="collapse navbar-collapse" id="navbarNav">
+              <ul className="navbar-nav">
+                <li className="nav-item">
+                  <Link id="logo" className="nav-link" to="">
+                    <img id="logoimg" src={logo} alt="Logo" /> EDUCRATE
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/add-quiz">
+                    Add Test
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/quiz-question">
+                    View Questions
+                  </Link>
+                </li>
+               
+              </ul>
+            </div>
+          </div>
+        </nav>
+        </div>
       <div className="container mt-5">
         <div className="row">
           <div className="col">
@@ -193,6 +222,7 @@ class AddQuiz extends Component {
               </div>
             </form>
           </div>
+        </div>
         </div>
       </div>
     );

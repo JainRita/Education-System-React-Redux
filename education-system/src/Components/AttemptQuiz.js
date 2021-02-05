@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import * as actionCreated from "../actions/action";
 import logo from "../images/quizbg.png";
-//import "../css/AttemptQuiz.css";
+import "../css/AttemptQuiz.css";
 
 class AttemptQuiz extends Component {
   constructor(props) {
@@ -19,6 +19,7 @@ class AttemptQuiz extends Component {
       options: opt,
       answer: ans,
     });
+
   }
 
   componentWillMount() {
@@ -27,19 +28,27 @@ class AttemptQuiz extends Component {
     }
   }
 
+
   submit() {
     let { options, answer } = this.state;
     let score = 0;
+    if(options === undefined){
+      alert("Please attempt the answer");
+      console.log(score)
+    }
+    
     if (options === answer) {
       score = score + 1;
       alert("Correct Answer");
-    } else {
-      alert("Answered Incorrect");
+    } 
+    else {
+      alert("Answered Incorrect ");
+      console.log("Incorrect answer!!! Please try again");
     }
 
-    console.log(score);
-    console.log(this.state.options);
-    console.log(this.state.answer);
+    console.log(score)
+    console.log("Selected Option:" + this.state.options);
+    console.log("Correct Answer" + this.state.answer);
   }
   componentDidMount() {
     this.props.onGetQuestions();
@@ -49,68 +58,23 @@ class AttemptQuiz extends Component {
     let questionList = this.props.questionList.map((ques, index) => {
       return (
         <tr key={index}>
-          <h1 className="h1">
-            {" "}
-            <td>{ques.questionId}</td>
-            <td>{ques.question}</td>{" "}
-          </h1>
-          <ul>
-            <li
-              className="text-li"
-              onClick={this.handleChange.bind(
-                this,
-                ques.option1,
-                ques.correctAnswer
-              )}
-            >
-              {ques.option1}
-            </li>
-            <li
-              className="text-li"
-              onClick={this.handleChange.bind(
-                this,
-                ques.option2,
-                ques.correctAnswer
-              )}
-            >
-              {ques.option2}
-            </li>
-            <li
-              className="text-li"
-              onClick={this.handleChange.bind(
-                this,
-                ques.option3,
-                ques.correctAnswer
-              )}
-            >
-              {ques.option3}{" "}
-            </li>
-            <li
-              className="text-li"
-              onClick={this.handleChange.bind(
-                this,
-                ques.option4,
-                ques.correctAnswer
-              )}
-            >
-              {ques.option4}
-            </li>
-            <div className="div-btn">
-              <button
-                onClick={this.submit.bind(this)}
-                className="float-left btn btn-primary btn-block rounded-pill submit-button"
-              >
-                Check Answer
-              </button>
-            </div>
-          </ul>
-        </tr>
+                    <h1 id="h1"> <td>{ques.question}</td> </h1>
+                    <ul>
+                        <li id="text-li" onClick={this.handleChange.bind(this,ques.option1, ques.correctAnswer)}>{ques.option1}</li>
+                        <li id="text-li" onClick={this.handleChange.bind(this,ques.option2, ques.correctAnswer)}>{ques.option2}</li>
+                        <li id="text-li" onClick={this.handleChange.bind(this,ques.option3, ques.correctAnswer)}>{ques.option3} </li>
+                        <li id="text-li" onClick={this.handleChange.bind(this,ques.option4, ques.correctAnswer)}>{ques.option4} </li>
+                        <div className="div-btn">
+                            <button onClick={this.submit.bind(this)} className="float-left btn btn-primary btn-block rounded-pill submit-button"> Check Answer </button> 
+                        </div>
+                    </ul>
+                </tr>
       );
     });
     return (
       <div className="bg">
-        <img src={logo} className="wave" alt="logo" />
-        <div className="Content">
+        <img src={logo}  id="wave-qhome" alt="logo" />
+        <div id="Content-text">
           <table className="table table-stripped table-light">
             <tbody>{questionList}</tbody>
           </table>

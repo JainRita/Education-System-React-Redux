@@ -1,4 +1,20 @@
-.Content h1 {
+#Content-text{
+  margin-top: 50px;
+  margin-left: 350px;
+  display: table;
+  max-width: 800px;
+  width: 200%;
+  background-color: rgb(218, 209, 209);
+  padding: 30px;
+}
+#wave-qhome{
+  position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    z-index: -1;  
+}
+#Content-text h1 {
   margin: 15px 0;
   font-size: 25px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -8,7 +24,7 @@
   text-shadow: none;
   text-align: left;
 }
-.text-li {
+#text-li {
   text-align: left;
   font-size: 18px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -19,38 +35,30 @@
   border-left: 4px solid #c50d9d;
   background-color: #bbb;
 }
-.text-li:hover {
+#text-li:hover {
   cursor: pointer;
   background-color: #a2a2a2;
 }
-.wave {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  height: 100%;
-  z-index: -1;
+#text-li:focus{
+  background-color: indigo;
 }
-.btn {
-  height: 50px;
-  width: 150px;
-  margin-right: 20px;
-}
-.div-btn {
-  margin-left: 670px;
-  width: 150px;
+#div-btn-test{
+  height: 100px;
+  width: 350px;
   border-radius: 27px;
-  background-color: blueviolet;
 }
-.correct,
-.correct:hover {
-  background-color: #1db900;
-  border-left: 4px solid #0f6300;
-  color: #fff;
+#btn-test{
+  padding-top: 10px;
+  border-radius: 16px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 24px;
+  color:deeppink;
+  font-family :'Times New Roman', Times, serif;
+  border-color: rgba(148,0,211,0.5);
+  box-shadow: 5px 10px #888888;
 }
-
-.incorrect,
-.incorrect:hover {
-  background-color: #ec0000;
-  border-left: 4px solid #ff3b3b;
-  color: #fff;
+#btn-test:hover{
+  background-color: rgba(236, 13, 106, 0.781);
+  color: white;
 }
