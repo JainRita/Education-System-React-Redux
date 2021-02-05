@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+.addmessage-plane {
+  position: fixed;
+  bottom: 290px;
+  left: 350px;
+  height: 70%;
+  z-index: -1;
+}
+.addmessage-bg {
+  margin-left: 20 !important;
+  height: 650px !important;
+  width: 650px !important;
+  margin-bottom: 100px !important;
+}
+.addmessage-avatar {
+  margin-top: 100px;
+  margin-left: 270px !important;
+  height: 100px;
+  width: 100px;
+}
+.addmessage-form-container {
+  margin-top: 10px;
+}
+.addmessage-login-text {
+  margin-left: 20px !important;
+  margin-top: 50px !important;
+  font-weight: 2px !important;
+  font-size: x-large !important;
+  font-weight: bolder !important;
+  text-align: left !important;
+}
+.addmessage-div-welcome {
+  margin-top: 10px;
+  font-weight: 2px;
+  font-size: xx-large;
+  font-weight: bolder;
+  text-align: center;
+}
+.addmessage-hr {
+  color: #683aa4;
+}
+.addmessage-btn {
+  width: 500px;
+  background-color: #683aa4 !important;
+  border: none !important;
+  outline: none !important;
+  height: 49px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-right: 150px !important;
+  margin-top: 10px !important;
+  cursor: pointer;
+  transition: 0.5s;
+  background-image: linear-gradient(
+    to right,
+    #683aa4,
+    #844fca,
+    #a66bf3
+  ) !important;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 170px;
+}
+.addmessage-form-container {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.addmessage-has-date .form-control {
+  padding-left: 2.375rem;
+  border-bottom: 2px solid #d9d9d9;
+  color: #999;
+}
+
+.addmessage-has-date .form-control-date {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+.addmessage-has-message .form-control {
+  padding-left: 2.375rem;
+  border-bottom: 2px solid #d9d9d9;
+  color: #999;
+}
+
+.addmessage-has-message .form-control-message {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+.addmessage-h5 {
+  color: #683aa4;
+  text-align: center;
+  margin-left: 50px;
+}
+
+@media (max-width: 360px) {
+  .addmessage-wave {
+    display: hidden;
+  }
+  .addmessage-avatar {
+    margin-top: 50px;
+    height: 70px;
+    width: 70px;
+  }
+  .addmessage-form-container {
+    margin-top: 5px;
+    height: auto;
+    width: 330px;
+    margin: 0 !important;
+  }
+  .addmessage-login-text {
+    margin: 0px !important;
+    font-size: larger !important;
+  }
+  .addmessage-div-welcome {
+    margin-top: 5px;
+    margin-left: 0px !important;
+    font-weight: 1px;
+  }
+  .addmessage-btn {
+    width: 200px;
+    margin-left: 70px !important;
+  }
+  .addmessage-bg {
+    height: 300px !important;
+    width: 300px !important;
+    margin: 0px !important;
+  }
+}

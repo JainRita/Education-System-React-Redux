@@ -1,0 +1,56 @@
+.Content h1 {
+  margin: 15px 0;
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: normal;
+  color: #ce1ace;
+  text-transform: none;
+  text-shadow: none;
+  text-align: left;
+}
+.text-li {
+  text-align: left;
+  font-size: 18px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  list-style: none;
+  margin: 0 0 5px 5px;
+  width: inherit;
+  padding: 10px;
+  border-left: 4px solid #c50d9d;
+  background-color: #bbb;
+}
+.text-li:hover {
+  cursor: pointer;
+  background-color: #a2a2a2;
+}
+.wave {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  z-index: -1;
+}
+.btn {
+  height: 50px;
+  width: 150px;
+  margin-right: 20px;
+}
+.div-btn {
+  margin-left: 670px;
+  width: 150px;
+  border-radius: 27px;
+  background-color: blueviolet;
+}
+.correct,
+.correct:hover {
+  background-color: #1db900;
+  border-left: 4px solid #0f6300;
+  color: #fff;
+}
+
+.incorrect,
+.incorrect:hover {
+  background-color: #ec0000;
+  border-left: 4px solid #ff3b3b;
+  color: #fff;
+}

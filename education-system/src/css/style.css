@@ -1,0 +1,57 @@
+.avatar {
+  margin-top: 20px;
+  margin-left: 600px;
+  height: 100px;
+  width: 100px;
+}
+.test-container {
+  margin-top: 100px;
+}
+.div-welcome {
+  margin-top: 10px;
+  margin-left: 600px;
+  font-weight: 2px;
+  font-size: xx-large;
+  font-weight: bolder;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: lightgreen;
+}
+.div-instruct {
+  height: 220px;
+  border-radius: 16px;
+  width: 500px;
+  background-color: lightcyan;
+  margin-left: 700px;
+}
+.h3 {
+  color: springgreen;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.li {
+  text-align: left;
+  font-size: large;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: springgreen;
+}
+.btn {
+  margin-left: 20px;
+  width: 300px;
+  background-color: #683aa4 !important;
+  border: none !important;
+  outline: none !important;
+  height: 49px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.5s;
+  background-image: linear-gradient(
+    to right,
+    #683aa4,
+    #844fca,
+    #a66bf3
+  ) !important;
+  cursor: pointer;
+}

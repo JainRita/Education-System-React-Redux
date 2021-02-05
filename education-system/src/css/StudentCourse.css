@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#logoimg {
+  max-height: 45px;
+}
+
+.coursebg {
+  background-image: url("../images/bg2.jpeg");
+}
+
+.course-card {
+  text-align: center;
+}
+nav {
+  max-height: 50px;
+}
+
+nav ul li a:hover {
+  color: #683aa4;
+}
+.nav-item {
+  margin-top: 10px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #683aa4;
+}
+
+nav ul li a {
+  color: #a9a9a9;
+  font-size: 22px;
+  margin: auto 20px;
+}
+
+#logo {
+  color: #683aa4;
+}
+
+#footer {
+  background-color: black;
+  height: 150px;
+  text-align: center;
+}
+.footer {
+  color: white;
+}

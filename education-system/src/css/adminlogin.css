@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+.wave{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	z-index: -1;
+}
+.bg{
+    height: 700px;
+    width: 600px;
+    margin-top: 0px;
+    margin-left: 10px;
+}
+.avatar{
+   margin-top: 100px;
+   margin-left: 250px;
+   height: 100px;
+   width: 100px;
+   border-radius: 90px;
+   border-style:groove;
+   border-color: #683aa4;
+}
+.form-container{
+    margin-top: 10px;
+
+}
+.login-text{
+    margin-top: 50px;
+    font-weight: 2px;
+    font-size: x-large;
+    font-weight: bolder;
+}
+.div-welcome{
+    margin-top: 10px;
+    margin-left: 210px;
+    font-weight: 2px;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+hr{
+    color: #683aa4;
+}
+.btn {
+    margin-left: 20px;
+    width: 300px;
+    background-color: #683aa4 !important;
+    border: none !important;
+    outline: none !important;
+    height: 49px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.5s;
+    background-image: linear-gradient(to right, #683aa4, #844fca, #a66bf3) !important;
+    cursor: pointer;
+   
+}
+.div-btn{
+    margin-left: 150px;
+}
+.div-text{
+    margin-left: 120px;
+}
+.form-container{
+    margin-right: 20px;
+}
+.has-username .form-control {
+    padding-left: 2.375rem;
+    border-bottom: 2px solid #d9d9d9;
+	color: #999;
+}
+
+.has-username .form-control-username {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+    
+}
+.has-password .form-control {
+    padding-left: 2.375rem;
+    border-bottom: 2px solid #d9d9d9;
+	color: #999;
+}
+
+.has-password .form-control-password {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+h5{
+    color: #683aa4;
+}

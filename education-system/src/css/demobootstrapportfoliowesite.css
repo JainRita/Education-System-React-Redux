@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+body {
+  display: block;
+  overflow-x: hidden;
+  font-family: "Comfortaa", cursive !important;
+}
+.wave {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  z-index: -1;
+}
+nav {
+  background-color: white;
+  margin: 10px;
+  height: 70px;
+  display: inline-flex;
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  padding: 0 20px;
+  border-radius: 45px;
+  box-shadow: 0 10px 40px #c9c8c8;
+}
+.navbar-brand img {
+  max-height: 54px;
+}
+.navbar-brand {
+  margin-top: 2px;
+  font-size: 30px;
+  color: #683aa4;
+  text-transform: uppercase;
+  font-weight: bolder !important;
+  font-family: "Poppins", sans-serif !important;
+  opacity: 3;
+}
+nav ul li a {
+  color: #a9a9a9;
+  font-size: 24px;
+  font-weight: 500;
+  margin: auto 10px;
+  transition: 0.3s;
+  z-index: 1;
+  position: relative;
+}
+
+nav ul li a:hover {
+  color: #683aa4;
+}
+
+@media screen and (max-width: 1220px) {
+  nav {
+    background-color: white;
+    margin: 10px;
+    height: 70px;
+    display: inline-flex;
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    padding: 0 20px;
+    border-radius: 45px;
+    box-shadow: 0 10px 40px #c9c8c8;
+  }
+  .navbar-brand {
+    margin-top: 2px;
+    margin-right: 25px;
+    font-size: 20px;
+    color: #683aa4;
+    text-transform: uppercase;
+    font-weight: bolder !important;
+    font-family: "Poppins", sans-serif !important;
+    opacity: 3;
+  }
+}
+
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+section h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #683aa4;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
+.name {
+  font-size: 85px;
+  color: black;
+  text-align: left;
+}
+span {
+  color: #b940c4;
+  font-size: 85px;
+  text-align: left;
+}
+.tagline {
+  color: black;
+  font-weight: 300;
+  font-size: 27;
+}
+section p {
+  font-size: 16px;
+  font-weight: 300;
+}
+button {
+  width: 50% !important;
+  border-radius: 50px !important;
+}
+#hero .col {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+#hero .img-col {
+  justify-content: flex-end;
+  margin-top: 50px;
+}
+#hero .card {
+  box-shadow: 9px 7px 16px #f6c6fa;
+  border: 0;
+  text-align: center;
+}
+#hero .icon {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 20px;
+}
+#hero .card:hover {
+  box-shadow: 11px 9px 16px #bd8ec2;
+}
+#courses .courses {
+  margin-bottom: 50px;
+}
+#courses .card {
+  border: none !important;
+  box-shadow: 9px 7px 16px #c7c7c7;
+  transition: all 0s linear;
+}
+#courses .card:hover {
+  cursor: pointer;
+  border: none;
+  border-top: 5px solid #683aa4 !important;
+  box-shadow: 11px 9px 16px #8d8d8d;
+}
+#courses .card-img-top {
+  height: 300px;
+  width: 350px;
+}
+#courses .card-body {
+  background-color: #fbccff;
+  border-top: 5px solid #b06afc;
+}
+#courses .price {
+  font-weight: 600 !important;
+  font-size: 23px;
+  float: right;
+  color: #d81900;
+  font-family: "Poppins", sans-serif !important;
+}
+#contact {
+  text-align: center;
+  background-color: #525252;
+  color: white;
+}
+#contact h1 {
+  vertical-align: top !important;
+  text-align: center;
+  color: white;
+}
+#contact .right {
+  text-align: right;
+}
+#contact .left {
+  text-align: left;
+}
+.fa {
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 10px;
+  border-radius: 50px;
+  background: #525252;
+  transition: all 0s linear;
+}
+.fa:hover {
+  cursor: pointer;
+  background: #a7a7a7;
+}
+.fa-facebook {
+  background: #525252;
+  color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+.ribbon {
+  height: 150px;
+  width: 150px;
+  top: -10px;
+  right: -10px;
+  position: absolute;
+  overflow: hidden;
+}
+.ribbon-span {
+  font-size: small;
+  width: 225px;
+  padding: 15px 0;
+  background-color: palevioletred;
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: -25px;
+  transform: rotate(45deg);
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+}
+.ribbon:after,
+.ribbon:before {
+  content: "";
+  border-top: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-left: 5px solid #850808;
+  border-bottom: 5px solid #850808;
+  position: absolute;
+}
+.ribbon:before {
+  bottom: 0;
+  right: 0;
+}

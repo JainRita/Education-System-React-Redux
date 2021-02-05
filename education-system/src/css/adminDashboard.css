@@ -1,0 +1,79 @@
+.body {
+  overflow: scroll;
+}
+
+.navbar-custom {
+  background-color: #683aa4;
+  margin: 4px;
+  border-radius: 3px;
+}
+#navbarToggler a {
+  color: white;
+}
+
+#navbarToggler a:hover {
+  color: black;
+}
+.navbar-brand {
+  color: white;
+}
+
+.navbar-custom a:hover {
+  color: black;
+}
+.nav-item {
+  padding-left: 20px;
+}
+
+.img-fluid {
+  margin: 5px;
+  padding-left: 100px;
+}
+
+.centered {
+  position: absolute;
+  top: 24%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.card {
+  margin: 5% 0%;
+  /*border: 2px solid #683AA4;
+      border-radius:5px;
+      box-shadow: 5px 10px #a181dd;*/
+}
+
+.card-body {
+  margin: 0% 0% 0% 3%;
+  padding: 6% 0%;
+}
+
+#btn-admin-home {
+  margin-left: 90px;
+  height: 45px;
+  color: white;
+  background-color: #683aa4;
+  font-size: 15px;
+}
+
+#test-img {
+  height: 300px;
+  width: 500px;
+}
+
+@media screen and (max-width: 1040px) {
+  #test-img {
+    height: 200px;
+    width: 280px;
+  }
+  #btn-admin-home {
+    margin-left: 70px;
+    height: 45px;
+    color: white;
+    background-color: #683aa4;
+    font-size: 11px;
+  }
+}
